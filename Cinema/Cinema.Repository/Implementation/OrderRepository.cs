@@ -3,6 +3,7 @@ using Cinema.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Cinema.Repository.Implementation
@@ -27,6 +28,16 @@ namespace Cinema.Repository.Implementation
                 .Include(z => z.User)
                 .Include(z => z.TicketInOrders)
                 .Include("TicketInOrders.PurchasedTicket")
+                .ToListAsync().Result;
+        }
+
+        public List<Order> getAllOrdersForUser(string userId)
+        {
+            return entities
+                .Include(z => z.User)
+                .Include(z => z.TicketInOrders)
+                .Include("TicketInOrders.PurchasedTicket")
+                .Where(p => p.UserId == userId)
                 .ToListAsync().Result;
         }
 

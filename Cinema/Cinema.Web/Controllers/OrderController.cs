@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,7 +30,8 @@ namespace Cinema.Web.Controllers
 
         public IActionResult Index()
         {
-            var result =  this.orderService.getAllOrders();
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result =  this.orderService.getAllOrders(userId);
             return View(result);
         }
 
@@ -57,7 +59,8 @@ namespace Cinema.Web.Controllers
                 worksheet.Cell(1, 1).Value = "Order Id";
                 worksheet.Cell(1, 2).Value = "Costumer Email";
 
-                var result = this.orderService.getAllOrders();
+                string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var result = this.orderService.getAllOrders(userId);
 
                 for (int i = 1; i <= result.Count(); i++)
                 {

@@ -7,8 +7,7 @@ namespace Cinema.Services.Interface
 {
     public interface IOrderService
     {
-        List<Order> getAllOrders();
-
+        List<Order> getAllOrders(string userId);
         Order getOrderDetails(BaseEntity model);
     }
 }
