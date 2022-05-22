@@ -1,0 +1,39 @@
+﻿@model Cinema.Domain.Domain.Order
+
+<div class="container">
+    <p>
+       For: @Model.User.UserName
+    </p>
+
+    <a asp-action="Index">Back to List</a>
+
+    @for (int i = 0; i < Model.TicketInOrders.Count(); i++)
+    {
+        var item = Model.TicketInOrders.ElementAt(i).PurchasedTicket;
+
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+            }
+
+            <div class="col-md-3 m-4">
+                <div class="card" style="width: 18rem; height: 30rem;">
+                    <img class="card-img-top" style="height: 70%" src="@item.MovieImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h3>@item.MovieTitle</h3>
+                        <h3>@item.MovieDescription</h3>
+                        <p>Quantity: @Model.TicketInOrders.ElementAt(i).Quantity</p>
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+            if (i % 3 == 2)
+            {
+            @:</div>
+        }
+    }
+
+
+</div>

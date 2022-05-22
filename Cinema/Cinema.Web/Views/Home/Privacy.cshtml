@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    @foreach (var member in new List<string>() { "186009", "181281", "181263", "181187", "181124", "181098", "181088", "181045", "181020", "152068" }.OrderBy(x => Guid.NewGuid()))
+    {
+        <span>@member.ToString()</span><br />
+    }
+</p>

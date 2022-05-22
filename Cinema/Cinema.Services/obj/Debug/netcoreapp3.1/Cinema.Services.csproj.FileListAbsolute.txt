@@ -1,0 +1,14 @@
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\bin\Debug\netcoreapp3.1\Cinema.Services.deps.json
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\bin\Debug\netcoreapp3.1\Cinema.Services.dll
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\bin\Debug\netcoreapp3.1\Cinema.Services.pdb
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\obj\Debug\netcoreapp3.1\Cinema.Services.AssemblyInfoInputs.cache
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\obj\Debug\netcoreapp3.1\Cinema.Services.AssemblyInfo.cs
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\obj\Debug\netcoreapp3.1\Cinema.Services.csproj.CoreCompileInputs.cache
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\obj\Debug\netcoreapp3.1\Cinema.Services.dll
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\obj\Debug\netcoreapp3.1\Cinema.Services.pdb
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\bin\Debug\netcoreapp3.1\Cinema.Domain.dll
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\bin\Debug\netcoreapp3.1\Cinema.Repository.dll
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\bin\Debug\netcoreapp3.1\Cinema.Repository.pdb
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\bin\Debug\netcoreapp3.1\Cinema.Domain.pdb
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\obj\Debug\netcoreapp3.1\Cinema.Services.csprojAssemblyReference.cache
+C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Services\obj\Debug\netcoreapp3.1\Cinema.Services.csproj.CopyComplete
