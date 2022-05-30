@@ -10,3 +10,15 @@ C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema
 C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Domain.dll
 C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Domain.pdb
 C:\Users\veron\Documents\GitHub\is_cinema_tickets\CinemaTicketsApp\Cinema\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.CopyComplete
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.deps.json
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.dll
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.pdb
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Domain.dll
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Domain.pdb
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csprojAssemblyReference.cache
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.AssemblyInfoInputs.cache
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.AssemblyInfo.cs
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.CopyComplete
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.dll
+C:\Users\Karolina\Desktop\ema\ikt\Cinema\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.pdb

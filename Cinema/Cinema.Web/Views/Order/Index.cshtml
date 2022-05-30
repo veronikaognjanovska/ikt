@@ -3,7 +3,7 @@
 <div class="container">
 
     <div class="row">
-        <a class="btn btn-outline-success" asp-controller="Order" asp-action="ExportAllOrders">Export Orders</a>
+        <a class="btn btn-primary" asp-controller="Order" asp-action="ExportAllOrders">Export Orders</a>
     </div>
 
     <table class="table mt-5">
@@ -12,11 +12,11 @@
                 <th scope="col">#</th>
                 <th scope="col">Costumer Details</th>
                 <th scope="col">Number of products</th>
-                <th></th>
+               
                 <th></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody style="color:white;">
             @for (int i = 0; i < Model.Count; i++)
             {
                 var item = Model[i];
@@ -25,8 +25,9 @@
                     <th scope="row">@(i+1)</th>
                     <td>@item.User.Email</td>
                     <td>@item.TicketInOrders.Count()</td>
-                    <td><a class="btn btn-outline-secondary" asp-action="Details" asp-route-id="@item.Id">Details</a></td>
-                    <td><a class="btn btn-outline-secondary" asp-action="CreateInvoice" asp-route-id="@item.Id">Create Invoice</a></td>
+                    <td><a class="btn btn-secondary" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a class="btn btn-secondary" asp-action="CreateInvoice" asp-route-id="@item.Id">Create Invoice</a>
+                    </td>
                 </tr>
 
             }
