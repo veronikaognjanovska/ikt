@@ -115,7 +115,7 @@ namespace Cinema.Web.Controllers
                 if (result.Succeeded)
                 {
                     await userManager.AddClaimAsync(user, new Claim("UserRole", "Admin"));
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Tickets");
                 }
                 else if (result.IsLockedOut)
                 {

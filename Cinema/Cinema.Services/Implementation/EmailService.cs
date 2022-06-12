@@ -36,14 +36,14 @@ namespace Cinema.Services.Implementation
 
                 emailMessage.Body = new TextPart(TextFormat.Plain) { Text = item.Content };
 
-                emailMessage.To.Add(new MailboxAddress(item.MailTo));
-                //emailMessage.To.Add(new MailboxAddress(item.MailTo,""));
+                //emailMessage.To.Add(new MailboxAddress(item.MailTo));
+                emailMessage.To.Add(new MailboxAddress(item.MailTo,""));
 
                 messages.Add(emailMessage);
             }
 
 
-
+/*
             try
             {
                 using (var smtp = new MailKit.Net.Smtp.SmtpClient())
@@ -68,7 +68,7 @@ namespace Cinema.Services.Implementation
             catch (SmtpException ex)
             {
                 throw ex;
-            }
+            }*/
         }
     }
 }
