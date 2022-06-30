@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace Cinema.Services.Interface
 {
-    public interface IBackgroundEmailSender
-    {
-        Task DoWork();
-    }
+    // public interface IBackgroundEmailSender
+    // {
+    //     Task DoWork();
+    // }
 }

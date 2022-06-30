@@ -12,35 +12,35 @@ using System.Threading.Tasks;
 
 namespace Cinema.Services.Implementation
 {
-    public class EmailService : IEmailService
-    {
-        private readonly EmailSettings _settings;
+    // public class EmailService : IEmailService
+    // {
+    //     private readonly EmailSettings _settings;
 
-        public EmailService(EmailSettings settings)
-        {
-            _settings = settings;
-        }
+    //     public EmailService(EmailSettings settings)
+    //     {
+    //         _settings = settings;
+    //     }
 
-        public async Task SendEmailAsync(List<EmailMessage> allMails)
-        {
-            List<MimeMessage> messages = new List<MimeMessage>();
+    //     public async Task SendEmailAsync(List<EmailMessage> allMails)
+    //     {
+    //         List<MimeMessage> messages = new List<MimeMessage>();
 
-            foreach (var item in allMails)
-            {
-                var emailMessage = new MimeMessage
-                {
-                    Sender = new MailboxAddress(_settings.SendersName, _settings.SmtpUserName),
-                    Subject = item.Subject
-                };
-                emailMessage.From.Add(new MailboxAddress(_settings.EmailDisplayName, _settings.SmtpUserName));
+    //         foreach (var item in allMails)
+    //         {
+    //             var emailMessage = new MimeMessage
+    //             {
+    //                 Sender = new MailboxAddress(_settings.SendersName, _settings.SmtpUserName),
+    //                 Subject = item.Subject
+    //             };
+    //             emailMessage.From.Add(new MailboxAddress(_settings.EmailDisplayName, _settings.SmtpUserName));
 
-                emailMessage.Body = new TextPart(TextFormat.Plain) { Text = item.Content };
+    //             emailMessage.Body = new TextPart(TextFormat.Plain) { Text = item.Content };
 
-                //emailMessage.To.Add(new MailboxAddress(item.MailTo));
-                emailMessage.To.Add(new MailboxAddress(item.MailTo,""));
+    //             //emailMessage.To.Add(new MailboxAddress(item.MailTo));
+    //             emailMessage.To.Add(new MailboxAddress(item.MailTo,""));
 
-                messages.Add(emailMessage);
-            }
+    //             messages.Add(emailMessage);
+    //         }
 
 
 /*
@@ -69,6 +69,6 @@ namespace Cinema.Services.Implementation
             {
                 throw ex;
             }*/
-        }
-    }
+    //     }
+    // }
 }

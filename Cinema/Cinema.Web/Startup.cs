@@ -25,12 +25,12 @@ namespace Cinema.Web
 {
     public class Startup
     {
-        private EmailSettings emailService;
+        // private EmailSettings emailService;
         public Startup(IConfiguration configuration)
         {
-            emailService = new EmailSettings();
+            // emailService = new EmailSettings();
             Configuration = configuration;
-            Configuration.GetSection("EmailSettings").Bind(emailService);
+            // Configuration.GetSection("EmailSettings").Bind(emailService);
         }
 
         public IConfiguration Configuration { get; }
@@ -56,9 +56,9 @@ namespace Cinema.Web
             services.AddTransient<IUserService, Services.Implementation.UserService>();
 
 
-            services.AddScoped<EmailSettings>(es => emailService);
-            services.AddScoped<IEmailService, EmailService>(email => new EmailService(emailService));
-            services.AddScoped<IBackgroundEmailSender, BackgroundEmailSender>();
+            // services.AddScoped<EmailSettings>(es => emailService);
+            // services.AddScoped<IEmailService, EmailService>(email => new EmailService(emailService));
+            // services.AddScoped<IBackgroundEmailSender, BackgroundEmailSender>();
             services.AddHostedService<ConsumeScopedHostedService>();
 
             services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));

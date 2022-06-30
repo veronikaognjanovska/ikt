@@ -15,15 +15,14 @@ namespace Cinema.Services.Implementation
         private readonly IRepository<Order> _orderRepositorty;
         private readonly IRepository<TicketInOrder> _ticketInOrderRepositorty;
         private readonly IUserRepository _userRepository;
-        private readonly IRepository<EmailMessage> _mailRepository;
 
-        public ShoppingCartService(IRepository<EmailMessage> mailRepository, IRepository<ShoppingCart> shoppingCartRepository, IRepository<TicketInOrder> ticketInOrderRepositorty, IRepository<Order> orderRepositorty, IUserRepository userRepository)
+        public ShoppingCartService( IRepository<ShoppingCart> shoppingCartRepository, IRepository<TicketInOrder> ticketInOrderRepositorty, IRepository<Order> orderRepositorty, IUserRepository userRepository)
         {
             _shoppingCartRepositorty = shoppingCartRepository;
             _userRepository = userRepository;
             _orderRepositorty = orderRepositorty;
             _ticketInOrderRepositorty = ticketInOrderRepositorty;
-            _mailRepository = mailRepository;
+           
         }
 
         public bool deleteTicketFromShoppingCart(string userId, Guid id)
@@ -92,11 +91,7 @@ namespace Cinema.Services.Implementation
 
                 var userShoppingCart = loggedInUser.UserCart;
 
-                EmailMessage mail = new EmailMessage();
-                mail.MailTo = loggedInUser.Email;
-                mail.Subject = "Successfully created order";
-                mail.Status = false;
-
+               
                 Order order = new Order
                 {
                     Id = Guid.NewGuid(),
@@ -136,7 +131,6 @@ namespace Cinema.Services.Implementation
                 sb.AppendLine("Total price: " + totalPrice.ToString());
 
 
-                mail.Content = sb.ToString();
 
 
                 TicketInOrders.AddRange(result);
@@ -149,7 +143,6 @@ namespace Cinema.Services.Implementation
                 loggedInUser.UserCart.TicketInShoppingCarts.Clear();
 
                 this._userRepository.Update(loggedInUser);
-                this._mailRepository.Insert(mail);
 
                 return true;
             }

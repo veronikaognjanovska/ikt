@@ -5773,19 +5773,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Karolina\\.nuget\\packages\\": {}
+    "C:\\Users\\veron\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Karolina\\Desktop\\ema\\ikt\\Cinema\\Cinema.Repository\\Cinema.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\veron\\Documents\\GitHub\\ikt\\Cinema\\Cinema.Repository\\Cinema.Repository.csproj",
       "projectName": "Cinema.Repository",
-      "projectPath": "C:\\Users\\Karolina\\Desktop\\ema\\ikt\\Cinema\\Cinema.Repository\\Cinema.Repository.csproj",
-      "packagesPath": "C:\\Users\\Karolina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Karolina\\Desktop\\ema\\ikt\\Cinema\\Cinema.Repository\\obj\\",
+      "projectPath": "C:\\Users\\veron\\Documents\\GitHub\\ikt\\Cinema\\Cinema.Repository\\Cinema.Repository.csproj",
+      "packagesPath": "C:\\Users\\veron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\veron\\Documents\\GitHub\\ikt\\Cinema\\Cinema.Repository\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Karolina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\veron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5797,9 +5804,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Karolina\\Desktop\\ema\\ikt\\Cinema\\Cinema.Domain\\Cinema.Domain.csproj": {
-              "projectPath": "C:\\Users\\Karolina\\Desktop\\ema\\ikt\\Cinema\\Cinema.Domain\\Cinema.Domain.csproj"
+            "C:\\Users\\veron\\Documents\\GitHub\\ikt\\Cinema\\Cinema.Domain\\Cinema.Domain.csproj": {
+              "projectPath": "C:\\Users\\veron\\Documents\\GitHub\\ikt\\Cinema\\Cinema.Domain\\Cinema.Domain.csproj"
             }
           }
         }
@@ -5812,6 +5820,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -5833,7 +5842,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
       }
     }
   }

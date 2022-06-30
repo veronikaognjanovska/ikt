@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Cinema.Services.Interface
 {
-    public interface IEmailService
-    {
-        Task SendEmailAsync(List<EmailMessage> allMails);
-    }
+    // public interface IEmailService
+    // {
+    //     Task SendEmailAsync(List<EmailMessage> allMails);
+    // }
 }

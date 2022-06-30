@@ -31,8 +31,8 @@ namespace Cinema.Services
         {
             using (var scope = _service.CreateScope())
             {
-                var scopedProcessingService = scope.ServiceProvider.GetRequiredService<IBackgroundEmailSender>();
-                await scopedProcessingService.DoWork();
+                // var scopedProcessingService = scope.ServiceProvider.GetRequiredService<IBackgroundEmailSender>();
+                //await scopedProcessingService.DoWork();
             }
         }
     }
